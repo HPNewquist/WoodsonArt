@@ -32,7 +32,7 @@ function goBack($ionicHistory)
 
 function loadTourSelectorData($scope)
 {
-  var file = 'Json/TourSelectors.json';
+  var file = 'audiotour/json/tours.json';
   var ajaxObject = new XMLHttpRequest();
   ajaxObject.overrideMimeType("application/json");
   ajaxObject.open('GET', file, true);

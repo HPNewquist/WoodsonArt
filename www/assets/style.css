@@ -33,11 +33,14 @@
 
 
 
+
+
+
 .back-button {
 	width: 65px;
 	height:35px;
 	background-size:65px 35px;
-	background-image: url(../img/res_button.png);
+	background-image: url(button.png);
 	display:inline-block;
 	opacity:0.8;
 	font-size:14px;
@@ -57,7 +60,7 @@
 
 
 .pane-home {
-	background: url(../img/home.png) no-repeat center center;
+	background: url(home.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -65,7 +68,7 @@
 }
 
 .pane-information {
-	background: url(../img/home.png) no-repeat center center fixed;
+	background: url(home.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -117,7 +120,7 @@ ion-nav-view {
 	width: 125px;
 	height:50px;
 	background-size:125px 50px;
-	background-image: url(../img/res_button.png);
+	background-image: url(button.png);
 	display:inline-block;
 	opacity:0.8;
 	text-decoration: none;
@@ -130,7 +133,7 @@ ion-nav-view {
 	position:relative;
 	top:80%;
 	left:1%;
-	background: url(../img/res_button.png) no-repeat;
+	background: url(button.png) no-repeat;
 	background-size: 100% 45px;
 	padding-left:15px;
 	padding-right:15px;
