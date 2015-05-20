@@ -1,0 +1,202 @@
+{
+  "META_TITLE":"Guitars",
+  "META_CREDIT":"null",
+  "STYLE":"NORMAL",
+  "DATA": [
+      {
+      "tableTitle": "About the Exhibition",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Guitars/Guitars0Thumbnail.png",
+      "largeImage": "Images/Guitars/Guitars0.png",
+      "imgCaption": "/Baroque Guitar/, ca. 1600; /Goldklang Parlour Guitar/, ca. 1890; /Telecaster/, 1949; /Warlock Red/, 2001",
+      "isPortraitImage": false,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Guitars/Guitars0.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Oud",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Guitars/Guitars1Thumbnail.png",
+      "largeImage": "Images/Guitars/Guitars1.png",
+      "imgCaption": "/Oud/, origin: 3000 BC, designer unknown, luthier unknown",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Guitars/Guitars1.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Vihuela",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Guitars/Guitars2Thumbnail.png",
+      "largeImage": "Images/Guitars/Guitars2.png",
+      "imgCaption": "/Vihuela/, origin: 1400, designer unknown, commissioned reproduction by Daniel Larson.",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Guitars/Guitars2.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Baroque Guitar",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Guitars/Guitars3Thumbnail.png",
+      "largeImage": "Images/Guitars/Guitars3.png",
+      "imgCaption": "/Baroque/ Guitar, ca. 1600, designer unknown - originally from Iberia, commissioned reproduction",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Guitars/Guitars3.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Classical Guitar",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Guitars/Guitars4Thumbnail.png",
+      "largeImage": "Images/Guitars/Guitars4.png",
+      "imgCaption": "/Classical Guitar (Spanish Guitar)/, \nca. 1969, based on Torres design, manufactured by Greco",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Guitars/Guitars4.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Hawaiian Lapsteel",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Guitars/Guitars5Thumbnail.png",
+      "largeImage": "Images/Guitars/Guitars5.png",
+      "imgCaption": "/N.S. Silver Hawaiian/, 1937, design by George Beauchamp and Adolph Richenbacher, manufactured by Rickenbacher",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Guitars/Guitars5.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Gibson Flying V",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Guitars/Guitars6Thumbnail.png",
+      "largeImage": "Images/Guitars/Guitars6.png",
+      "imgCaption": "/Gibson Flying V/, 1958, designed by Ted McCarthy, et. al., manufactured by Gibson",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Guitars/Guitars6.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Gretsch Country",
+      "subText": "Gentleman ",
+      "textSize": 17,
+      "tableThumb": "Images/Guitars/Guitars7Thumbnail.png",
+      "largeImage": "Images/Guitars/Guitars7.png",
+      "imgCaption": "/Country Gentleman/, 1958, design by Chet Atkins, et. al., manufactured by Gretsch Guitars",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Guitars/Guitars7.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Fender Stratocaster",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Guitars/Guitars8Thumbnail.png",
+      "largeImage": "Images/Guitars/Guitars8.png",
+      "imgCaption": "/Stratocaster/, 1954, design by Leo Fender, Freddie Tavares, et. al., manufactured by Fender Musical Instruments",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Guitars/Guitars8.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Ovation Roundback",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Guitars/Guitars9Thumbnail.png",
+      "largeImage": "Images/Guitars/Guitars9.png",
+      "imgCaption": "/Ovation Elite/, 1983, design by Charles Kaman, et. al., manufactured by Kaman Music Corporation",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Guitars/Guitars9.mp4"
+        }
+      ]
+    },
+	{
+      "tableTitle": "Air Guitar",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Guitars/Guitars10Thumbnail.png",
+      "largeImage": "Images/Guitars/Guitars10.png",
+      "imgCaption": "/Air Guitar/, circa 1970, designer unknown",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Guitars/Guitars10.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "B.C. Rich Warlock",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Guitars/Guitars11Thumbnail.png",
+      "largeImage": "Images/Guitars/Guitars11.png",
+      "imgCaption": "/Warlock Red/, 2001, design by Bernardo Rico, manufactured by B.C. Rich",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Guitars/Guitars11.mp4"
+        }
+      ]
+    },
+	{
+      "tableTitle": "Jem 7",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Guitars/Guitars12Thumbnail.png",
+      "largeImage": "Images/Guitars/Guitars12.png",
+      "imgCaption": "/Jem 7/, 1985, design by Steve Vai, Jem, et. al., manufactured by Ibanez",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Guitars/Guitars12.mp4"
+        }
+      ]
+    }
+  ]
+}

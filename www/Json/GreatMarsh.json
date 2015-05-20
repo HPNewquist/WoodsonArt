@@ -1,0 +1,61 @@
+{
+  "META_TITLE":"The Great Marsh",
+  "META_CREDIT":"null",
+  "DATA": [
+    {
+      "tableTitle": "About the Exhibition",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/GreatMarsh/GreatMarsh1Thumbnail.png",
+      "largeImage": "Images/GreatMarsh/GreatMarsh1.png",
+      "imgCaption": "Owen J. Gromme, /Horicon Marsh/, 1968, oil on canvas",
+      "isPortraitImage": false,
+      "videoData": [
+      ]
+    },
+    {
+      "tableTitle": "Dennis Boyd",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/GreatMarsh/GreatMarsh2Thumbnail.png",
+      "largeImage": "Images/GreatMarsh/GreatMarsh2.png",
+      "imgCaption": "Dennis Boyd, /In Passing/, 2012, oil on linen",
+      "isPortraitImage": false,
+      "videoData": [
+      ]
+    },
+    {
+      "tableTitle": "Cynthia Fjelstad",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/GreatMarsh/GreatMarsh3Thumbnail.png",
+      "largeImage": "Images/GreatMarsh/GreatMarsh3.png",
+      "imgCaption": "Cynthia Fjelstad, /Swan Song/, 1995, acrylic and alkyd on hardboard",
+      "isPortraitImage": false,
+      "videoData": [
+      ]
+    },
+    {
+      "tableTitle": "Mort Solberg",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/GreatMarsh/GreatMarsh4Thumbnail.png",
+      "largeImage": "Images/GreatMarsh/GreatMarsh4.png",
+      "imgCaption": "Mort Solberg, /Whispering Wings/, 1989, watercolor on paper",
+      "isPortraitImage": false,
+      "videoData": [
+      ]
+    },
+    {
+      "tableTitle": "Don Henson",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/GreatMarsh/GreatMarsh5Thumbnail.png",
+      "largeImage": "Images/GreatMarsh/GreatMarsh5.png",
+      "imgCaption": "Don Henson, /Anticipation/, 1983, acrylic on hardboard",
+      "isPortraitImage": false,
+      "videoData": [
+      ]
+    }
+  ]
+}

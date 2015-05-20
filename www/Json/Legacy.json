@@ -1,0 +1,72 @@
+{
+  "META_TITLE":"Legacy Lost & Saved",
+  "META_CREDIT":"null",
+  "DATA": [
+    {
+      "tableTitle": "About the Exhibition",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Legacy/Legacy1Thumbnail.png",
+      "largeImage": "Images/Legacy/Legacy1.png",
+      "imgCaption": "/Legacy Lost & Saved/ exhibition, Woodson Art Museum, 2014 - 15",
+      "isPortraitImage": false,
+      "videoData": [
+      ]
+    },
+    {
+      "tableTitle": "Owen J. Gromme",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Legacy/Legacy2Thumbnail.png",
+      "largeImage": "Images/Legacy/Legacy2.png",
+      "imgCaption": "Owen J. Gromme, /Passenger Pigeons/, 1986, oil on canvas, collection of Bud Gussel",
+      "isPortraitImage": false,
+      "videoData": [
+      ]
+    },
+    {
+      "tableTitle": "Prideaux John Shelby",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Legacy/Legacy3Thumbnail.png",
+      "largeImage": "Images/Legacy/Legacy3.png",
+      "imgCaption": "Prideaux John Shelby, /Great Auk/, 1824-34, hand-colored etching on paper",
+      "isPortraitImage": true,
+      "videoData": [
+      ]
+    },
+    {
+      "tableTitle": "Todd McGrain",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Legacy/Legacy4Thumbnail.png",
+      "largeImage": "Images/Legacy/Legacy4.png",
+      "imgCaption": "Todd McGrain, /Heath Hen, Labrador Duck, Passenger Pigeon, Great Auk, and Carolina Parakeet (3/15), 2012, bronze",
+      "isPortraitImage": false,
+      "videoData": [
+      ]
+    },
+    {
+      "tableTitle": "Don Richard Eckelberry",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Legacy/Legacy5Thumbnail.png",
+      "largeImage": "Images/Legacy/Legacy5.png",
+      "imgCaption": "Don Richard Eckelberry, /Peregrine Falcons/, ca. 1965, watercolor on illustration board",
+      "isPortraitImage": true,
+      "videoData": [
+      ]
+    },
+    {
+      "tableTitle": "Louis Agassiz Fuertes",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Legacy/Legacy6Thumbnail.png",
+      "largeImage": "Images/Legacy/Legacy6.png",
+      "imgCaption": "Louis Agassiz Fuertes, /Whooping Crane/, ca. 1900, watercolor and gouache on paper",
+      "isPortraitImage": false,
+      "videoData": [
+      ]
+    }
+  ]
+}

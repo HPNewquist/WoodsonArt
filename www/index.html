@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Woodson Art</title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic/js/angular/angular.js"></script>
+    <script src="lib/ionic/js/angular/angular-resource.js"></script>
+    <script src="lib/ionic/js/angular-ui/angular-ui-router.min.js"></script>
+    <script src="lib/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="MyApp">
+    <ion-nav-bar class="bar-positive"></ion-nav-bar>
+    <ion-nav-view animation="fade-in"></ion-nav-view>
+    <script id="home.html" type="text/ng-template">
+      <ion-view hide-nav-bar="true" view-title="">
+        <ion-pane class="pane-home">
+          <div class="home-header">
+            <h4>Leigh Yawkey</h4>
+            <h3>Woodson Art Museum</h3>
+          </div>
+          <div class="home-footer">
+            <div class="home-buttons">
+              <a class="home-button" href="#/tourSelector">Tours</a>
+              <a class="home-button" href="#/information">Information</a>
+            </div>
+          </div>
+        </ion-pane>
+      </ion-view>
+    </script>
+    <script id="information.html" type="text/ng-template">
+      <ion-view class="page" hide-nav-bar="false" view-title="Information">
+        <ion-nav-buttons side="left" ng-show="false">
+          <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
+      </ion-nav-buttons>
+        <ion-pane class="pane-information">
+        </ion-pane>
+      </ion-view>
+    </script>
+    <script id="tourSelector.html" type="text/ng-template">
+      <ion-view hide-nav-bar="true" view-title="">
+        <ion-pane>
+          <ul class="selector-list">
+              <li ng-repeat="item in objects" class="selector-item">
+                <div class="selector" style="background-image: url({{ item.image }});">
+                  <div class="tour-button" ng-click="select('{{ item.link }}');">{{item.button}}</div>
+                </div>
+              </li>
+          </ul>
+          <div class="back-button" ng-click="goBack();">Back</div>
+        </ion-pane>
+      </ion-view>
+    </script>
+  </body>
+</html>

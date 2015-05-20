@@ -1,0 +1,170 @@
+@font-face {
+  font-family: Avenir;
+  src: url('default.ttf');
+}
+
+* {
+	font-family: Avenir !important;
+}
+
+.bar-positive {
+	border-color: rgb(147,140,126) !important;
+  background-color: rgb(147,140,126) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.back-button {
+	width: 65px;
+	height:35px;
+	background-size:65px 35px;
+	background-image: url(../img/res_button.png);
+	display:inline-block;
+	opacity:0.8;
+	font-size:14px;
+	color:black;
+	text-align: center;
+	line-height: 35px;
+}
+
+
+.page {
+	background-color: black;
+}
+
+
+
+
+
+
+.pane-home {
+	background: url(../img/home.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+	height:100%;
+}
+
+.pane-information {
+	background: url(../img/home.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	height:100%;
+	opacity:0.45;
+}
+
+
+.home-header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+	text-align:center;
+	width:100%;
+	margin-top:4%;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+.home-header > h3, h4 {
+	margin:0;
+	padding:0;
+	color:white;
+}
+
+.home-footer {
+	position: absolute;
+	height: 50px;
+	top: calc(96% - 50px);
+	width:100%;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+ion-nav-view {
+  background-color: transparent;
+ }
+
+.home-buttons {
+	width:256px;
+	height:50px;
+	font-size:18px;
+
+	text-align: center;
+	line-height: 50px;
+	margin-left:calc(50% - 128px);
+}
+
+.home-button, .home-button:visited{
+	width: 125px;
+	height:50px;
+	background-size:125px 50px;
+	background-image: url(../img/res_button.png);
+	display:inline-block;
+	opacity:0.8;
+	text-decoration: none;
+	color:black;
+}
+
+.tour-button {
+	width: calc(auto);
+	height:45px;
+	position:relative;
+	top:80%;
+	left:1%;
+	background: url(../img/res_button.png) no-repeat;
+	background-size: 100% 45px;
+	padding-left:15px;
+	padding-right:15px;
+	display:inline-block;
+	opacity:0.8;
+	font-size:17px;
+	color:black;
+	text-align: center;
+	line-height: 45px;
+}
+
+
+
+.selector-list {
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+
+.selector-item {
+	width:100%;
+	height:50%;
+}
+
+.selector {
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+	margin:0;
+	padding:0;
+}

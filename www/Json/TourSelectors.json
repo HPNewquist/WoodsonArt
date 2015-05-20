@@ -1,0 +1,38 @@
+{
+  "pages":[
+    {
+      "id":"0",
+      "content":[
+        {
+          "image":"Images/Guitars/CoverGuitars.png",
+          "button":"Guitars",
+          "link":2,
+          "disabled": false
+        },
+        {
+          "image":"Images/Gardens/CoverGardens.png",
+          "button":"Outdoor Sculpture",
+          "link":"Json/Gardens.json",
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "id":"2",
+      "content":[
+        {
+          "image":"Images/Legacy/CoverLegacy.png",
+          "button":"Legacy Lost & Saved",
+          "link":"Json/Legacy.json",
+          "disabled": false
+        },
+        {
+          "image":"Images/GreatMarsh/CoverGreatMarsh.png",
+          "button":"The Great Marsh",
+          "link":"Json/GreatMarsh.json",
+          "disabled": false
+        }
+      ]
+    }
+  ]
+}
