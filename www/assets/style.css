@@ -1,11 +1,28 @@
 @font-face {
-  font-family: Avenir;
-  src: url('default.ttf');
+  font-family: "Avenir";
+  src: url('Avenir LT 45 Book.ttf');
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url('Avenir LT 45 Book Oblique.ttf');
+  font-style: italic;
 }
 
 * {
-	font-family: Avenir !important;
+	font-family: "Avenir" !important;
 }
+
+i {
+  font-style:italic;
+}
+
+
+.col-wrapper{width:100%; margin:0 auto;}
+.col{margin:0 10px; float:left; display:inline; width:50%;}
+
+
+
 
 .bar-positive {
 	border-color: rgb(147,140,126) !important;
@@ -50,9 +67,47 @@
 	color:black;
 	font-size:17px;
 	list-style: none;
-	background-color:white;
+	background-color:white
+}
+
+
+.g
+{
+  overflow:scroll;
+  margin-top:44px;
+  display:block;
+  margin-left:calc(50% - 160px);
+  height:calc(100% - 44px);
+}
+
+.g li
+{
+  float: left;
+	width: 50%;
 
 }
+
+.g img
+{
+  width:140px;
+  height:140px;
+	display: block;
+}
+.g li:nth-child(odd)
+{
+  clear: left;
+}
+.g li:nth-child(even)
+{
+  margin-left:10px;
+}
+.g li
+{
+  width: 140px;
+  padding:10px;
+}
+
+
 
 .tour-list-item:not(:last-child)
 {

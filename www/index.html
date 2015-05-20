@@ -57,7 +57,7 @@
         </ion-pane>
       </ion-view>
     </script>
-    <script id="artworkSelector.html" type="text/ng-template">
+    <script id="artworkSelectorTable.html" type="text/ng-template">
       <ion-view hide-nav-bar="false">
         <ion-nav-title>{{objectTitle}}</ion-nav-title>
         <ion-nav-buttons side="left" ng-show="false">
@@ -78,6 +78,21 @@
               </table>
             </li>
           </ul>
+        </ion-pane>
+      </ion-view>
+    </script>
+    <script id="artworkSelectorGrid.html" type="text/ng-template">
+      <ion-view hide-nav-bar="false">
+        <ion-nav-title>{{objectTitle}}</ion-nav-title>
+        <ion-nav-buttons side="left" ng-show="false">
+          <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
+        </ion-nav-buttons>
+        <ion-pane>
+        <ul class="g">
+          <li ng-repeat="item in objects">
+            <img src="{{ item.largeImage }}"></img>
+          </li>
+        </ul>
         </ion-pane>
       </ion-view>
     </script>
