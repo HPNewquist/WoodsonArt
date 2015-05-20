@@ -13,7 +13,7 @@
           "image":"audiotour/images/covers/garden.png",
           "button":"Outdoor Sculpture",
           "link":"audiotour/json/gardens.json",
-          "display" : "grid"
+          "display" : "table"
         }
       ]
     }

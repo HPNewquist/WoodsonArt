@@ -65,7 +65,7 @@
         </ion-nav-buttons>
         <ion-pane>
           <ul class="tour-list">
-            <li ng-repeat="item in objects" class="tour-list-item">
+            <li ng-repeat="item in objects" class="tour-list-item" ng-click="select('{{item.tableTitle}}', '{{item.item.largeImage}}', '{{item.imgCaption}}')">
               <table class="tableview">
                 <tr class="tableview">
                   <td class="tableviewimg">
@@ -89,10 +89,32 @@
         </ion-nav-buttons>
         <ion-pane>
         <ul class="g">
-          <li ng-repeat="item in objects">
+          <li class="meta-title">{{smallTitle1}}</li>
+          <li class="meta-title">{{smallTitle2}}</li>
+          <li ng-repeat="item in objects" ng-click="select('{{item.tableTitle}}', '{{item.largeImage}}', '{{item.imgCaption}}')">
             <img src="{{ item.largeImage }}"></img>
           </li>
         </ul>
+        </ion-pane>
+      </ion-view>
+    </script>
+    <script id="artwork.html" type="text/ng-template">
+      <ion-view hide-nav-bar="false">
+        <ion-nav-title ng-bind-html="artworkTitle"></ion-nav-title>
+        <ion-nav-buttons side="left" ng-show="false">
+          <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
+        </ion-nav-buttons>
+        <ion-pane>
+
+        <ul class="h">
+          <li class="meta-title">{{smallTitle1}}</li>
+          <li class="meta-title">{{smallTitle2}}</li>
+          <li>
+            <img class="no-border" src="{{artworkImage}}"/>
+          </li>
+        </ul>
+
+          <p class="artwork-caption" ng-bind-html="artworkCaption"></p>
         </ion-pane>
       </ion-view>
     </script>

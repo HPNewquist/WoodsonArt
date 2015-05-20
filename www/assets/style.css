@@ -22,15 +22,23 @@ i {
 .col{margin:0 10px; float:left; display:inline; width:50%;}
 
 
-
+.no-border img{border-style: none;}
 
 .bar-positive {
 	border-color: rgb(147,140,126) !important;
   background-color: rgb(147,140,126) !important;
 }
 
+.artwork-image {
 
+	object-fit:contain;
+}
 
+.artwork-caption {
+  color:black;
+  width:100%;
+  padding:10px;
+}
 
 
 .tour-list {
@@ -84,7 +92,6 @@ i {
 {
   float: left;
 	width: 50%;
-
 }
 
 .g img
@@ -92,6 +99,7 @@ i {
   width:140px;
   height:140px;
 	display: block;
+
 }
 .g li:nth-child(odd)
 {
@@ -107,6 +115,38 @@ i {
   padding:10px;
 }
 
+
+
+
+
+.h
+{
+  margin-top:45px;
+  width:100%;
+}
+
+.h li
+{
+  width:100%;
+  text-align:center;
+}
+
+.h img
+{
+  width:90%;
+  max-height:230px;
+  object-fit:contain;
+}
+
+
+
+.meta-title {
+  text-align: center;
+  font-size: 17px;
+  width:150px;
+  height:auto;
+  margin-left:8px;
+}
 
 
 .tour-list-item:not(:last-child)

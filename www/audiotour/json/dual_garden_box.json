@@ -1,124 +1,295 @@
 {
   "META_TITLE":"The Garden at Night & Remixed",
-  "META_CREDIT":"null",
+  "META_TITLE_SMALL_1": "Sculpture",
+  "META_TITLE_SMALL_2": "Photography",
   "DATA": [
     {
-      "tableTitle": "Paul Rhymer",
-      "subText": "",
-      "textSize": 17,
-      "tableThumb": "Images/Gardens/Gardens1Thumbnail.png",
-      "largeImage": "Images/Gardens/Gardens1.png",
-      "imgCaption": "Paul Rhymer, /Feeder Frenzy/, 2013, bronze on basalt",
-      "isPortraitImage": true,
+      "tableTitle": "Fred Rose",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/1l.png",
+      "imgCaption": "Fred Rose, <i>Ah Ha, a Haw is a Hedge a Hawthorn</i>, 2013, mixed medium. Illustration by Mary Jo Rado; photo by Fred Rose and MJ Rado.",
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"Videos/Gardens/Gardens1.mp4"
-        }
-      ]
-    },
-	{
-      "tableTitle": "Walter Matia",
-      "subText": "/Three Wild Turkeys/",
-	  "textSize": 17,
-      "tableThumb": "Images/Gardens/Gardens2Thumbnail.png",
-      "largeImage": "Images/Gardens/Gardens2.png",
-      "imgCaption": "Walter Matia, /Three Wild Turkeys/ (5\\/7), 2002, bronze",
-      "isPortraitImage": false,
-      "videoData": [
-        {
-          "title":"Listen",
-          "videoFile":"Videos/Gardens/Gardens2.mp4"
+          "videoFile":"audiotour/videos/dual/1l.mp4"
         }
       ]
     },
     {
-      "tableTitle": "Rosetta",
-      "subText": "",
-      "textSize": 17,
-      "tableThumb": "Images/Gardens/Gardens3Thumbnail.png",
-      "largeImage": "Images/Gardens/Gardens3.png",
-      "imgCaption": "Rosetta, /Mountain Fishing/ (5\\/8), 1996, bronze",
-      "isPortraitImage": false,
+      "tableTitle": "Linda Rutenberg",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/1r.png",
+      "imgCaption": "Linda Rutenberg, <i>Peony</i>, 2006, Montreal Botanical Gardens",
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"Videos/Gardens/Gardens3.mp4"
+          "videoFile":"audiotour/videos/dual/1r.mp4"
+        }
+      ]
+    },
+	  {
+      "tableTitle": "Jack Larimore",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/2l.png",
+      "imgCaption": "Jack Larimore, <i>Enrooted Loop</i>, 2013, saplings from Bartram\\'s Garden, paulownia, shovel heads; photo by John Carlano.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/2l.mp4"
         }
       ]
     },
     {
-      "tableTitle": "Steve Kestrel",
-      "subText": "",
-      "textSize": 17,
-      "tableThumb": "Images/Gardens/Gardens4Thumbnail.png",
-      "largeImage": "Images/Gardens/Gardens4.png",
-      "imgCaption": "Steve Kestrel, /Desert Solitaire/\n(5\\11), 2000, bronze",
-      "isPortraitImage": true,
+      "tableTitle": "Linda Rutenberg",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/2r.png",
+      "imgCaption": "Linda Rutenberg, <i>The Mound</i>, 2006, Vizcaya Museum and Garden. Miami",
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"Videos/Gardens/Gardens4.mp4"
+          "videoFile":"audiotour/videos/dual/2r.mp4"
         }
       ]
     },
     {
-      "tableTitle": "Gwynn Murrill",
-      "subText": "/Upside-Down Dog/",
-      "textSize": 17,
-      "tableThumb": "Images/Gardens/Gardens5Thumbnail.png",
-      "largeImage": "Images/Gardens/Gardens5.png",
-      "imgCaption": "Gwynn Murrill, /Upside-Down Dog\\/Saluki/ (2\\/6), 2005, bronze",
-      "isPortraitImage": false,
+      "tableTitle": "Ally Crow",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/3l.png",
+      "imgCaption": "Ally Crow, <i>Vestige 2</i>, 2013, silverbell, walnut, glass bottle; photo by Ally Crow.",
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"Videos/Gardens/Gardens5.mp4"
+          "videoFile":"audiotour/videos/dual/3l.mp4"
         }
       ]
     },
     {
-      "tableTitle": "Gwynn Murrill",
-      "subText": "/Eagle III/",
-      "textSize": 17,
-      "tableThumb": "Images/Gardens/Gardens6Thumbnail.png",
-      "largeImage": "Images/Gardens/Gardens6.png",
-      "imgCaption": "Gwynn Murrill, /Eagle III/ (5\\/6), 2010, bronze",
-      "isPortraitImage": false,
+      "tableTitle": "Linda Rutenberg",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/3r.png",
+      "imgCaption": "Linda Rutenberg, <i>Italian Garden</i>, 2006, Brentwood Bay, British Columbia.",
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"Videos/Gardens/Gardens6.mp4"
-        }
-      ]
-    },
-	{
-      "tableTitle": "Walter Matia",
-      "subText": "/Yard Boss/",
-	  "textSize": 17,
-      "tableThumb": "Images/Gardens/Gardens7Thumbnail.png",
-      "largeImage": "Images/Gardens/Gardens7.png",
-      "imgCaption": "Water Matia, /Yard Boss/, (Edition of 16), 1999",
-      "isPortraitImage": true,
-      "videoData": [
-        {
-          "title":"Listen",
-          "videoFile":"Videos/Gardens/Gardens7.mp4"
+          "videoFile":"audiotour/videos/dual/3r.mp4"
         }
       ]
     },
     {
-      "tableTitle": "Kent Ullberg",
-      "subText": "",
-      "textSize": 17,
-      "tableThumb": "Images/Gardens/Gardens8Thumbnail.png",
-      "largeImage": "Images/Gardens/Gardens8.png",
-      "imgCaption": "Kent Ullberg, /Eagle Rock/ (3\\/7), 1983, bronze",
-      "isPortraitImage": false,
+      "tableTitle": "Amy Forsyth",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/4l.png",
+      "imgCaption": "Amy Forsyth with Katie Hudnall, <i>Seed Cabinet</i>, 2013, mixed medium. Photo by Amy Forsyth and Shelly Givens.",
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"Videos/Gardens/Gardens8.mp4"
+          "videoFile":"audiotour/videos/dual/4l.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Linda Rutenberg",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/4r.png",
+      "imgCaption": "Linda Rutenberg, <i>Sicilan Honey Garlic</i>, 2006, Chicago Botanic Garden.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/4r.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Benn Colker",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/5l.png",
+      "imgCaption": "Benn Colker, <i>Museum of the Maker\\'s Hand</i>, 2013, ash, basswood, steel, dirt, primer, lacuqer; photo by John Carlano.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/5l.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Linda Rutenberg",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/5r.png",
+      "imgCaption": "Linda Rutenberg, <i>Giant Water Lily</i>, 2006, Fairchild Tropical Botanic Garden, Coral Gables, Florida.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/5r.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Judith Rosenthal",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/6l.png",
+      "imgCaption": "Judith Rosenthal, <i>Bartram Boxes</i>, 2012, porcelain; box: wood; Plexiglass top; photo by Judith Rosenthal and John Carlano.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/6l.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Linda Rutenberg",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/6r.png",
+      "imgCaption": "Linda Rutenberg, <i>Globe Thistle</i>, 2005. Reford Gardens, Quebec, Canada.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/6r.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Beth Feldman Brandt",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/7l.png",
+      "imgCaption": "Beth Feldman Brandt & Claire Owen, <i>Storms Box</i>, 2012-2013, mixed medium; photo by John Carlano.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/7l.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Linda Rutenberg",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/7r.png",
+      "imgCaption": "Linda Rutenberg, <i>Topiary</i>, 2006, Longwood Gardens, Kennett Square, Pennsylvania.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/7r.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Dixie Biggs",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/8l.png",
+      "imgCaption": "Dixie Biggs & Ray Jones, Arca Botanicum, 2013, box: walnut, cherry, boxwood; seed/pods: boxwood from Bartram\\'s Garden; photo by Randy Batista.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/8l.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Linda Rutenberg",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/8r.png",
+      "imgCaption": "Linda Rutenberg, <i>Lobster Claw</i>, 2006, Brooklyn Botanic Garden.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/8r.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Leah Woods",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/9l.png",
+      "imgCaption": "Leah Woods, <i>In and Down and Up and Out</i>, 2013, butternut, cherry; photo by Nathan Hansen.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/9l.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Linda Rutenberg",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/9r.png",
+      "imgCaption": "Linda Rutenberg, <i>Trillium</i>, 2006, Atlanta Botanical Garden.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/9r.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Joshua Salesin",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/10l.png",
+      "imgCaption": "Joshua Salesin, <i>Nut Case</i>, 2003-2012, various woods; photo by Joshua Salesin.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/10l.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Linda Rutenberg",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/10r.png",
+      "imgCaption": "Linda Rutenberg, <i>Tulips</i>, 2006, Dallas Arboretum.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/10r.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Gord Peteran",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/11l.png",
+      "imgCaption": "Gord Peteran, Blind Spot, 2013, rose stems from Bartram\\'s Garden, jute, paper; photo by John Carlano.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/11l.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "",
+      "tableThumb": "",
+      "largeImage": "",
+      "imgCaption": "",
+      "videoData": []
+    },
+    {
+      "tableTitle": "Paige Davis",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/12l.png",
+      "imgCaption": "Paige Davis and Bird Ross, <i>Separately and Together</i>, 2013, wood, steel, mixed media; photo by Paige Davis and Dorothy Griffith.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/12l.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "",
+      "tableThumb": "",
+      "largeImage": "",
+      "imgCaption": "",
+      "videoData": []
+    },
+    {
+      "tableTitle": "Neil Donovan",
+      "tableThumb": "",
+      "largeImage": "audiotour/images/dual/13l.png",
+      "imgCaption": "Neil Donovan & John Vahanian, <i>Precarious Crossing</i>, 2013, mixed medium; photo by John Carlano.",
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"audiotour/videos/dual/13l.mp4"
         }
       ]
     }

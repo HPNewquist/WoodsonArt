@@ -2,6 +2,9 @@ var app = angular.module('WoodsonArt', ['ionic', 'ngCordova']); /* ngCordova pro
 var currentTour = 0;
 var loadedTourFile;
 var storedTourSelectorData;
+var storedArtworkTitle;
+var storedArtworkImage;
+var storedArtworkCaption;
 
 app.config(function($stateProvider, $urlRouterProvider)
 {
@@ -10,6 +13,7 @@ app.config(function($stateProvider, $urlRouterProvider)
   $stateProvider.state('tourSelector', { url: '/tourSelector', templateUrl: 'tourSelector.html', controller: tourSelectorController, cache: true});
   $stateProvider.state('artworkSelectorTable', { url: '/artworkSelectorTable', templateUrl: 'artworkSelectorTable.html', controller: artworkSelectorTableController, cache: false});
   $stateProvider.state('artworkSelectorGrid', { url: '/artworkSelectorGrid', templateUrl: 'artworkSelectorGrid.html', controller: artworkSelectorGridController, cache: false});
+  $stateProvider.state('artwork', { url: '/artwork', templateUrl: 'artwork.html', controller: artworkController, cache: false});
   $urlRouterProvider.otherwise('/home'); /* Redirect the app to the home page on launch. */
 });
 
@@ -73,6 +77,8 @@ function loadTourData($file, $scope)
 		 {
 			 var tourData = $.parseJSON(ajaxObject.responseText);
        $scope.objectTitle = tourData.META_TITLE;
+       $scope.smallTitle1 = tourData.META_TITLE_SMALL_1;
+       $scope.smallTitle2 = tourData.META_TITLE_SMALL_2;
        $scope.objects = tourData.DATA;
 		 }
 	}
@@ -130,18 +136,52 @@ function tourSelectorController($scope, $ionicHistory, $state)
   };
 }
 
-function artworkSelectorTableController($scope, $ionicHistory)
+function artworkSelectorTableController($scope, $ionicHistory, $state)
 {
   loadTourData(loadedTourFile, $scope);
   $scope.goBack = function()
   {
     goBack($ionicHistory);
   };
+  $scope.select = function(title, image, caption)
+  {
+    select($scope, $state, title, image, caption);
+  }
 }
 
-function artworkSelectorGridController($scope, $ionicHistory)
+function artworkSelectorGridController($scope, $ionicHistory, $state)
 {
   loadTourData(loadedTourFile, $scope);
+  $scope.goBack = function()
+  {
+    goBack($ionicHistory);
+  };
+  $scope.select = function(title, image, caption)
+  {
+    select($scope, $state, title, image, caption);
+  }
+}
+
+function select($scope, $state, title, image, caption)
+{
+  if(title === "")
+  {
+    console.log("blank");
+  }
+  else
+  {
+    storedArtworkTitle = title;
+    storedArtworkImage = image;
+    storedArtworkCaption = caption;
+    $state.go("artwork");
+  }
+}
+
+function artworkController($scope, $ionicHistory)
+{
+  $scope.artworkTitle = storedArtworkTitle;
+  $scope.artworkImage = storedArtworkImage;
+  $scope.artworkCaption = storedArtworkCaption;
   $scope.goBack = function()
   {
     goBack($ionicHistory);
