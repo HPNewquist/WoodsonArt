@@ -57,5 +57,29 @@
         </ion-pane>
       </ion-view>
     </script>
+    <script id="artworkSelector.html" type="text/ng-template">
+      <ion-view hide-nav-bar="false">
+        <ion-nav-title>{{objectTitle}}</ion-nav-title>
+        <ion-nav-buttons side="left" ng-show="false">
+          <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
+        </ion-nav-buttons>
+        <ion-pane>
+          <ul class="tour-list">
+            <li ng-repeat="item in objects" class="tour-list-item">
+              <table class="tableview">
+                <tr class="tableview">
+                  <td class="tableviewimg">
+                    <img class="tableviewimg" src="{{ item.tableThumb }}"></img>
+                  </td>
+                  <td class="tableviewcaptionholder">
+                    <p class="tableviewcaption">{{ item.tableTitle }}</p>
+                  </td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+        </ion-pane>
+      </ion-view>
+    </script>
   </body>
 </html>

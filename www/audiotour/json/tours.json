@@ -4,17 +4,15 @@
       "id":"0",
       "content":[
         {
-          "image":"audiotour/Images/Guitars/CoverGuitars.png",
-          "button":"Guitars",
-          "link":"Json/Guitars.json",
-          "disabled": false,
-          "display" : "table"
+          "image":"audiotour/images/covers/soon.png",
+          "button":"The Garden at Night & Remixed",
+          "link":"audiotour/json/dual_garden_box.json",
+          "display" : "grid"
         },
         {
-          "image":"audiotour/Images/Gardens/CoverGardens.png",
+          "image":"audiotour/images/covers/garden.png",
           "button":"Outdoor Sculpture",
-          "link":"Json/Gardens.json",
-          "disabled": false,
+          "link":"audiotour/json/Gardens.json",
           "display" : "table"
         }
       ]
