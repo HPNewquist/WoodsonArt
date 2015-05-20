@@ -72,7 +72,7 @@
                     <img class="tableviewimg" src="{{ item.tableThumb }}"></img>
                   </td>
                   <td class="tableviewcaptionholder">
-                    <p class="tableviewcaption">{{ item.tableTitle }}</p>
+                    <p ng-bind-html="item.tableTitle" class="tableviewcaption"></p>
                   </td>
                 </tr>
               </table>

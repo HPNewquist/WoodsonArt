@@ -1,11 +1,13 @@
-var app = angular.module('MyApp', ['ionic', 'ngCordova']); /* ngCordova provides PhoneGap API access! */
+var app = angular.module('WoodsonArt', ['ionic', 'ngCordova']); /* ngCordova provides PhoneGap API access! */
 var currentTour = 0;
+var loadedTourFile;
 
 app.config(function($stateProvider, $urlRouterProvider)
 {
   $stateProvider.state('index', { url: '/home', templateUrl: 'home.html', controller: indexController });
   $stateProvider.state('information', { url: '/information', templateUrl: 'information.html', controller: informationController });
-  $stateProvider.state('tourSelector', { url: '/tourSelector', templateUrl: 'tourSelector.html', controller: tourSelectorController });
+  $stateProvider.state('tourSelector', { url: '/tourSelector', templateUrl: 'tourSelector.html', controller: tourSelectorController, cache: true});
+  $stateProvider.state('artworkSelector', { url: '/artworkSelector', templateUrl: 'artworkSelector.html', controller: artworkSelectorController, cache: false});
   $urlRouterProvider.otherwise('/home'); /* Redirect the app to the home page on launch. */
 });
 
@@ -41,9 +43,36 @@ function loadTourSelectorData($scope)
      if (ajaxObject.readyState == 4)
      {
        var tourSelectorData = $.parseJSON(ajaxObject.responseText);
-       $scope.objects = tourSelectorData.pages[currentTour].content;
+       for(var i = 0; i < tourSelectorData.pages.length; i++)
+       {
+         if(tourSelectorData.pages[i].id == currentTour)
+         {
+           $scope.objects = tourSelectorData.pages[i].content;
+         }
+         else
+         {
+            continue;
+         }
+       }
      }
   }
+  ajaxObject.send(null);
+}
+
+function loadTourData($file, $scope)
+{
+  var ajaxObject = new XMLHttpRequest();
+	ajaxObject.overrideMimeType("application/json");
+	ajaxObject.open('GET', $file, true);
+	ajaxObject.onreadystatechange = function ()
+	{
+		 if (ajaxObject.readyState == 4)
+		 {
+			 var tourData = $.parseJSON(ajaxObject.responseText);
+       $scope.objectTitle = tourData.META_TITLE;
+       $scope.objects = tourData.DATA;
+		 }
+	}
   ajaxObject.send(null);
 }
 
@@ -63,8 +92,9 @@ function informationController($scope, $ionicHistory)
   };
 }
 
-function tourSelectorController($scope, $ionicHistory)
+function tourSelectorController($scope, $ionicHistory, $state)
 {
+  /* Reload - $state.transitionTo($state.current, $state.$current.params, { reload: true, inherit: true, notify: true }); */
   loadTourSelectorData($scope);
   $scope.goBack = function()
   {
@@ -74,13 +104,17 @@ function tourSelectorController($scope, $ionicHistory)
   {
     if(isNaN($link))
     {
-      alert("Must link to tableview");
+      loadedTourFile = $link;
+      $state.go("artworkSelector");
     }
-    else
-    {
-      currentTour = $link.valueOf();
-      loadTourSelectorData($scope);
-      window.location = "#/tourSelector";
-    }
+  };
+}
+
+function artworkSelectorController($scope, $ionicHistory)
+{
+  loadTourData(loadedTourFile, $scope);
+  $scope.goBack = function()
+  {
+    goBack($ionicHistory);
   };
 }

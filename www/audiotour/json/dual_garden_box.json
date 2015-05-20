@@ -1,0 +1,126 @@
+{
+  "META_TITLE":"Gardens at Night & Remixed",
+  "META_CREDIT":"null",
+  "DATA": [
+    {
+      "tableTitle": "Paul Rhymer",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Gardens/Gardens1Thumbnail.png",
+      "largeImage": "Images/Gardens/Gardens1.png",
+      "imgCaption": "Paul Rhymer, /Feeder Frenzy/, 2013, bronze on basalt",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Gardens/Gardens1.mp4"
+        }
+      ]
+    },
+	{
+      "tableTitle": "Walter Matia",
+      "subText": "/Three Wild Turkeys/",
+	  "textSize": 17,
+      "tableThumb": "Images/Gardens/Gardens2Thumbnail.png",
+      "largeImage": "Images/Gardens/Gardens2.png",
+      "imgCaption": "Walter Matia, /Three Wild Turkeys/ (5\\/7), 2002, bronze",
+      "isPortraitImage": false,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Gardens/Gardens2.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Rosetta",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Gardens/Gardens3Thumbnail.png",
+      "largeImage": "Images/Gardens/Gardens3.png",
+      "imgCaption": "Rosetta, /Mountain Fishing/ (5\\/8), 1996, bronze",
+      "isPortraitImage": false,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Gardens/Gardens3.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Steve Kestrel",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Gardens/Gardens4Thumbnail.png",
+      "largeImage": "Images/Gardens/Gardens4.png",
+      "imgCaption": "Steve Kestrel, /Desert Solitaire/\n(5\\11), 2000, bronze",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Gardens/Gardens4.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Gwynn Murrill",
+      "subText": "/Upside-Down Dog/",
+      "textSize": 17,
+      "tableThumb": "Images/Gardens/Gardens5Thumbnail.png",
+      "largeImage": "Images/Gardens/Gardens5.png",
+      "imgCaption": "Gwynn Murrill, /Upside-Down Dog\\/Saluki/ (2\\/6), 2005, bronze",
+      "isPortraitImage": false,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Gardens/Gardens5.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Gwynn Murrill",
+      "subText": "/Eagle III/",
+      "textSize": 17,
+      "tableThumb": "Images/Gardens/Gardens6Thumbnail.png",
+      "largeImage": "Images/Gardens/Gardens6.png",
+      "imgCaption": "Gwynn Murrill, /Eagle III/ (5\\/6), 2010, bronze",
+      "isPortraitImage": false,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Gardens/Gardens6.mp4"
+        }
+      ]
+    },
+	{
+      "tableTitle": "Walter Matia",
+      "subText": "/Yard Boss/",
+	  "textSize": 17,
+      "tableThumb": "Images/Gardens/Gardens7Thumbnail.png",
+      "largeImage": "Images/Gardens/Gardens7.png",
+      "imgCaption": "Water Matia, /Yard Boss/, (Edition of 16), 1999",
+      "isPortraitImage": true,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Gardens/Gardens7.mp4"
+        }
+      ]
+    },
+    {
+      "tableTitle": "Kent Ullberg",
+      "subText": "",
+      "textSize": 17,
+      "tableThumb": "Images/Gardens/Gardens8Thumbnail.png",
+      "largeImage": "Images/Gardens/Gardens8.png",
+      "imgCaption": "Kent Ullberg, /Eagle Rock/ (3\\/7), 1983, bronze",
+      "isPortraitImage": false,
+      "videoData": [
+        {
+          "title":"Listen",
+          "videoFile":"Videos/Gardens/Gardens8.mp4"
+        }
+      ]
+    }
+  ]
+}
