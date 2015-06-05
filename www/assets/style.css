@@ -14,9 +14,253 @@
 }
 
 i {
-  font-style:italic;
+  font-style: italic;
 }
 
+/* A dirty hack to fix the animations on iDevices. */
+ion-nav-view {
+  background-color: transparent;
+}
+
+.bar-positive {
+	border-color: rgb(147,140,126) !important;
+  background-color: rgb(147,140,126) !important;
+}
+
+/* This sets the background color to black to make the information fade work. */
+.page {
+	background-color: black;
+}
+
+.pane-home {
+	background: url(home.png) no-repeat center center;
+  background-size: cover;
+	height:100%;
+}
+
+.pane-information {
+	background: url(home.png) no-repeat center center fixed;
+	background-size: cover;
+	height:100%;
+	opacity:0.45;
+}
+
+.home-header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+	text-align:center;
+	width:100%;
+	margin-top:4%;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+.home-header > h3, h4 {
+	margin:0;
+	padding:0;
+	color:white;
+}
+
+.home-footer {
+	position: absolute;
+	height: 50px;
+	top: calc(96% - 50px);
+	width:100%;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+.home-buttons {
+  width:256px;
+  height:50px;
+	font-size:18px;
+	text-align: center;
+	line-height: 50px;
+	margin-left:calc(50% - 128px);
+}
+
+.home-button, .home-button:visited {
+	width: 125px;
+	height:50px;
+	background-size:125px 50px;
+	background-image: url(button.png);
+	display:inline-block;
+	opacity:0.8;
+	text-decoration: none;
+	color:black;
+}
+
+.back-button {
+	width: 65px;
+	height:35px;
+	background-size:65px 35px;
+	background-image: url(button.png);
+	display:inline-block;
+	opacity:0.8;
+	font-size:14px;
+	color:black;
+	text-align: center;
+	line-height: 35px;
+}
+
+.selector-list {
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+
+.selector-item {
+	width:100%;
+	height:50%;
+}
+
+.selector {
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+	margin:0;
+	padding:0;
+}
+
+
+.row {
+    display: flex;
+    margin: 10px;
+}
+.col {
+    flex: 2;
+}
+.box {
+    border: 2px solid black;
+    background-size:cover;
+    background-position: center center;
+    margin: 0px -22px;
+    width: 150px;
+    height: 150px;
+
+}
+
+
+
+
+
+
+
+
+.centerme {
+  width:100%;
+  height:100%;
+}
+
+.fullscreen-player {
+  width:100%;
+  height:100%;
+}
+
+.transparent {
+  background-color: black;
+}
+
+
+
+
+/* Galleries view */
+.galleries-list {
+    flex-wrap: wrap;
+    -webkit-flex-flow: row wrap;
+    margin-left:0px;
+    width:100%;
+}
+.gallery {
+    height: calc(50vw - 15px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    background-color: #FFF;
+    position: relative;
+    display: block;
+}
+.gallery .gallery-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+.gallery .gallery-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(42, 42, 42, 0.3);
+}
+.gallery .gallery-title, .galleries-view .gallery .gallery-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+.galleries-view .gallery .gallery-title {
+    padding: 3px 5px;
+}
+.gallery-view .gallery .gallery-title {
+    text-align: center;
+}
+.gallery .gallery-title i {
+    font-size: 2em;
+}
+.gallery .gallery-title h5, .gallery .gallery-title h6 {
+    color: #fff;
+    margin: 0;
+}
+
+
+.row {
+  width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.videoList {
+  width:100%;
+}
+
+.videoList > li{
+  width:100%;
+  height:45px;
+  border-top:1px solid transparent;
+  border-bottom:1px solid black;
+  font-size:21px;
+  text-align:center;
+
+}
+
+.videoList > li:first-child
+{
+  border-top:1px solid black;
+}
+
+.videoList > li > p
+{
+  margin-top:12px;
+}
 
 .col-wrapper{width:100%; margin:0 auto;}
 .col{margin:0 10px; float:left; display:inline; width:50%;}
@@ -24,20 +268,18 @@ i {
 
 .no-border img{border-style: none;}
 
-.bar-positive {
-	border-color: rgb(147,140,126) !important;
-  background-color: rgb(147,140,126) !important;
-}
+
 
 .artwork-image {
-
 	object-fit:contain;
 }
 
 .artwork-caption {
   color:black;
   width:100%;
-  padding:10px;
+  padding:5px 10px 5px 10px;
+  font-size:17px;
+  text-align:left;
 }
 
 
@@ -79,49 +321,10 @@ i {
 }
 
 
-.g
-{
-  overflow:scroll;
-  margin-top:44px;
-  display:block;
-  margin-left:calc(50% - 155px);
-  height:calc(100% - 44px);
-}
-
-.g li
-{
-  float: left;
-	width: 50%;
-}
-
-.g img
-{
-  width:140px;
-  height:140px;
-	display: block;
-
-}
-.g li:nth-child(odd)
-{
-  clear: left;
-}
-.g li:nth-child(even)
-{
-  margin-left:10px;
-}
-.g li
-{
-  width: 140px;
-  padding:10px;
-}
-
-
-
-
 
 .h
 {
-  margin-top:45px;
+  margin-top:60px;
   width:100%;
 }
 
@@ -137,6 +340,7 @@ i {
   max-height:230px;
   object-fit:contain;
 }
+
 
 
 
@@ -175,96 +379,8 @@ border-bottom:1px solid black;
 
 
 
-.back-button {
-	width: 65px;
-	height:35px;
-	background-size:65px 35px;
-	background-image: url(button.png);
-	display:inline-block;
-	opacity:0.8;
-	font-size:14px;
-	color:black;
-	text-align: center;
-	line-height: 35px;
-}
 
 
-.page {
-	background-color: black;
-}
-
-
-
-
-
-
-.pane-home {
-	background: url(home.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-	height:100%;
-}
-
-.pane-information {
-	background: url(home.png) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	height:100%;
-	opacity:0.45;
-}
-
-
-.home-header {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-	text-align:center;
-	width:100%;
-	margin-top:4%;
-	background: rgba(0, 0, 0, 0.75);
-}
-
-.home-header > h3, h4 {
-	margin:0;
-	padding:0;
-	color:white;
-}
-
-.home-footer {
-	position: absolute;
-	height: 50px;
-	top: calc(96% - 50px);
-	width:100%;
-	background: rgba(0, 0, 0, 0.75);
-}
-
-ion-nav-view {
-  background-color: transparent;
- }
-
-.home-buttons {
-	width:256px;
-	height:50px;
-	font-size:18px;
-
-	text-align: center;
-	line-height: 50px;
-	margin-left:calc(50% - 128px);
-}
-
-.home-button, .home-button:visited{
-	width: 125px;
-	height:50px;
-	background-size:125px 50px;
-	background-image: url(button.png);
-	display:inline-block;
-	opacity:0.8;
-	text-decoration: none;
-	color:black;
-}
 
 .tour-button {
 	width: calc(auto);
@@ -284,29 +400,106 @@ ion-nav-view {
 	line-height: 45px;
 }
 
-
-
-.selector-list {
-	position:absolute;
-	top:0;
-	left:0;
-	margin:0;
-	padding:0;
-	width:100%;
-	height:100%;
+/* Tablet Devices */
+@media only screen and (min-device-width: 768px)
+{
+  .h img
+  {
+    max-height:350px;
+  }
+  .artwork-caption
+  {
+    font-size:24px;
+    padding:15px 20px 15px 20px;
+    text-align:center;
+  }
 }
 
-.selector-item {
-	width:100%;
-	height:50%;
-}
 
-.selector {
-	width:100%;
-	height:100%;
-	background-repeat:no-repeat;
-    background-position: center center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#im {
+    background-repeat: no-repeat;
     background-size: cover;
-	margin:0;
-	padding:0;
+    width: 100%;
+    height:100%;
+    margin: 0 0 0px;
+}
+
+
+
+
+
+
+
+.gallery {
+}
+
+
+ul.rig {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2.5%; /* should match li left margin */
+  margin-top:44px;
+  padding:10px;
+  overflow:visible;
+}
+ul.rig li {
+
+	display: inline-block;
+	margin: 0 0 2.5% 2.5%;
+	background: #fff;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+  width:100%;
+  height:150px;
+}
+ul.rig li img {
+
+}
+ul.rig li h3 {
+	margin: 0 0 5px;
+}
+ul.rig li p {
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #999;
+}
+
+/* class for 2 columns */
+ul.rig.columns-2 li {
+	width: 47.5%; /* this value + 2.5 should = 50% */
 }

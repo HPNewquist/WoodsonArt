@@ -6,6 +6,7 @@
     <title>Woodson Art</title>
     <link href="assets/lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="assets/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/videoplayer/cordova-mediaplayer.css">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="assets/lib/ionic/js/ionic.bundle.js"></script>
     <script src="assets/lib/ionic/js/angular/angular.js"></script>
@@ -14,6 +15,8 @@
     <script src="assets/lib/ng-cordova.min.js"></script>
     <script src="cordova.js"></script>
     <script src="assets/app.js"></script>
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
   </head>
   <body ng-app="WoodsonArt">
     <ion-nav-bar class="bar-positive"></ion-nav-bar>
@@ -65,7 +68,7 @@
         </ion-nav-buttons>
         <ion-pane>
           <ul class="tour-list">
-            <li ng-repeat="item in objects" class="tour-list-item" ng-click="select('{{item.tableTitle}}', '{{item.item.largeImage}}', '{{item.imgCaption}}')">
+            <li ng-repeat="item in objects" class="tour-list-item" ng-click="select('{{item.tableTitle}}', '{{item.largeImage}}', '{{item.imgCaption}}', {{item.videoData}})">
               <table class="tableview">
                 <tr class="tableview">
                   <td class="tableviewimg">
@@ -87,14 +90,29 @@
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
         </ion-nav-buttons>
-        <ion-pane>
-        <ul class="g">
-          <li class="meta-title">{{smallTitle1}}</li>
-          <li class="meta-title">{{smallTitle2}}</li>
-          <li ng-repeat="item in objects" ng-click="select('{{item.tableTitle}}', '{{item.largeImage}}', '{{item.imgCaption}}')">
-            <img src="{{ item.largeImage }}"></img>
-          </li>
-        </ul>
+        <ion-pane style="overflow-y:auto;">
+          <div style="margin-top:44px;width:100%">
+            <div class="row galleries-list">
+              <div class="col" style="width:50%;">
+                <p style="text-align:center;font-size:18px;" ng-bind-html="smallTitle1"></p>
+              </div>
+              <div class="col" style="width:50%;">
+                <p style="text-align:center;font-size:18px;" ng-bind-html="smallTitle2"></p>
+              </div>
+            </div>
+            <div style="visibility:{{objects[$index].hidden}}" ng-repeat="item in objects" class="row galleries-list" ng-if="$even">
+              <div ng-click="select('{{objects[$index].tableTitle}}', '{{objects[$index].largeImage}}', '{{objects[$index].imgCaption}}', {{objects[$index].videoData}})" class="col" style="width:50%">
+                <span class="gallery">
+                  <div class="gallery-bg" style="background-size:cover;background-position:center center;background-image: url({{objects[$index].largeImage}})" ></div>
+                </span>
+              </div>
+              <div style="visibility:{{objects[$index + 1].hidden}}" ng-click="select('{{objects[$index + 1].tableTitle}}', '{{objects[$index + 1].largeImage}}', '{{objects[$index + 1].imgCaption}}', {{objects[$index + 1].videoData}})" class="col" style="width:50%">
+                <span class="gallery">
+                    <div class="gallery-bg" style="background-size:cover;background-position:center center;background-image: url({{objects[$index + 1].largeImage}})"></div>
+                </span>
+              </div>
+            </div>
+          </div>
         </ion-pane>
       </ion-view>
     </script>
@@ -104,17 +122,27 @@
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
         </ion-nav-buttons>
-        <ion-pane>
-
-        <ul class="h">
-          <li class="meta-title">{{smallTitle1}}</li>
-          <li class="meta-title">{{smallTitle2}}</li>
-          <li>
-            <img class="no-border" src="{{artworkImage}}"/>
-          </li>
-        </ul>
-
+        <ion-pane style="overflow-y:auto;">
+          <ul class="h">
+            <li>
+              <img class="no-border" src="{{artworkImage}}"/>
+            </li>
+          </ul>
           <p class="artwork-caption" ng-bind-html="artworkCaption"></p>
+          <ul class="videoList">
+            <li ng-repeat="item in videoData" ng-click="playVideo('{{item.videoFile}}')"><p ng-bind-html="item.title"></p></li>
+          </ul>
+        </ion-pane>
+      </ion-view>
+    </script>
+    <script id="video.html" type="text/ng-template">
+      <ion-view hide-nav-bar="false">
+        <ion-nav-title ng-bind-html="videoTitle"></ion-nav-title>
+        <ion-nav-buttons side="left" ng-show="false">
+          <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
+        </ion-nav-buttons>
+        <ion-pane style="background-color:black;">
+          <video ng-src="{{link}}" class="centerme" controls="controls" autoplay></video>
         </ion-pane>
       </ion-view>
     </script>

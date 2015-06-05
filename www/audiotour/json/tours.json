@@ -4,7 +4,7 @@
       "id":"0",
       "content":[
         {
-          "image":"audiotour/images/covers/soon.png",
+          "image":"audiotour/images/covers/dual.png",
           "button":"The Garden at Night & Remixed",
           "link":"audiotour/json/dual_garden_box.json",
           "display" : "grid"

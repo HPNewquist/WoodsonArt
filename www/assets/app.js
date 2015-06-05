@@ -5,6 +5,8 @@ var storedTourSelectorData;
 var storedArtworkTitle;
 var storedArtworkImage;
 var storedArtworkCaption;
+var storedVideoData;
+var storedVideoLink;
 
 app.config(function($stateProvider, $urlRouterProvider)
 {
@@ -14,6 +16,7 @@ app.config(function($stateProvider, $urlRouterProvider)
   $stateProvider.state('artworkSelectorTable', { url: '/artworkSelectorTable', templateUrl: 'artworkSelectorTable.html', controller: artworkSelectorTableController, cache: false});
   $stateProvider.state('artworkSelectorGrid', { url: '/artworkSelectorGrid', templateUrl: 'artworkSelectorGrid.html', controller: artworkSelectorGridController, cache: false});
   $stateProvider.state('artwork', { url: '/artwork', templateUrl: 'artwork.html', controller: artworkController, cache: false});
+  $stateProvider.state('video', { url: '/video', templateUrl: 'video.html', controller: videoController, cache: false});
   $urlRouterProvider.otherwise('/home'); /* Redirect the app to the home page on launch. */
 });
 
@@ -67,6 +70,23 @@ function loadTourSelectorData($scope)
 }
 
 function loadTourData($file, $scope)
+{
+  var ajaxObject = new XMLHttpRequest();
+	ajaxObject.overrideMimeType("application/json");
+	ajaxObject.open('GET', $file, true);
+	ajaxObject.onreadystatechange = function ()
+	{
+		 if (ajaxObject.readyState == 4)
+		 {
+			 var tourData = $.parseJSON(ajaxObject.responseText);
+       $scope.objectTitle = tourData.META_TITLE;
+       $scope.objects = tourData.DATA;
+		 }
+	}
+  ajaxObject.send(null);
+}
+
+function loadTourDataGallery($file, $scope)
 {
   var ajaxObject = new XMLHttpRequest();
 	ajaxObject.overrideMimeType("application/json");
@@ -143,26 +163,26 @@ function artworkSelectorTableController($scope, $ionicHistory, $state)
   {
     goBack($ionicHistory);
   };
-  $scope.select = function(title, image, caption)
+  $scope.select = function(title, image, caption, videoData)
   {
-    select($scope, $state, title, image, caption);
+    select($scope, $state, title, image, caption, videoData);
   }
 }
 
 function artworkSelectorGridController($scope, $ionicHistory, $state)
 {
-  loadTourData(loadedTourFile, $scope);
+  loadTourDataGallery(loadedTourFile, $scope);
   $scope.goBack = function()
   {
     goBack($ionicHistory);
   };
-  $scope.select = function(title, image, caption)
+  $scope.select = function(title, image, caption, videoData)
   {
-    select($scope, $state, title, image, caption);
+    select($scope, $state, title, image, caption, videoData);
   }
 }
 
-function select($scope, $state, title, image, caption)
+function select($scope, $state, title, image, caption, videoData)
 {
   if(title === "")
   {
@@ -173,17 +193,34 @@ function select($scope, $state, title, image, caption)
     storedArtworkTitle = title;
     storedArtworkImage = image;
     storedArtworkCaption = caption;
+    storedVideoData = videoData;
     $state.go("artwork");
   }
 }
 
-function artworkController($scope, $ionicHistory)
+function artworkController($scope, $state, $ionicHistory, $ionicModal)
 {
   $scope.artworkTitle = storedArtworkTitle;
   $scope.artworkImage = storedArtworkImage;
   $scope.artworkCaption = storedArtworkCaption;
+  $scope.videoData = storedVideoData;
   $scope.goBack = function()
   {
     goBack($ionicHistory);
   };
+  $scope.playVideo = function($link)
+  {
+    storedVideoLink = $link;
+    $state.go("video");
+  }
+}
+
+function videoController($scope, $state, $ionicHistory)
+{
+  $scope.goBack = function()
+  {
+    goBack($ionicHistory);
+  };
+  $scope.link = storedVideoLink;
+  $scope.videoTitle = storedArtworkTitle;
 }

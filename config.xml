@@ -5,12 +5,15 @@
   <author email="museum@lywam.org" href="http://lywam.org/">Leigh Yawkey Woodson Art Museum</author>
   <content src="index.html"/>
   <access origin="*"/>
-  <preference name="webviewbounce" value="false"/>
-  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="webviewbounce" value="true"/>
+  <preference name="UIWebViewBounce" value="true"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="StatusBarOverlaysWebView" value="false" />
   <preference name="BackupWebStorage" value="none"/>
+  <preference name="AllowInlineMediaPlayback" value="true"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
+  <feature name="http://api.phonegap.com/1.0/device" />
+  <feature name="http://api.phonegap.com/1.0/media" />
 </widget>
