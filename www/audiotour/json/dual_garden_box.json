@@ -55,7 +55,7 @@
         "videoData": [
           {
             "title":"Listen",
-            "videoFile":""
+            "videoFile":"audiotour/videos/dual/RTreeFern.mp4"
           }
         ]
       },
@@ -81,7 +81,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":""
+          "videoFile":"audiotour/videos/dual/RAloe.mp4"
         }
       ]
     },
@@ -107,7 +107,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":""
+          "videoFile":"audiotour/videos/dual/RHoneyGarlic.mp4"
         }
       ]
     },
@@ -133,7 +133,7 @@
     "videoData": [
       {
         "title":"Listen",
-        "videoFile":""
+        "videoFile":"audiotour/videos/dual/RPitcherPlant.mp4"
       }
     ]
   },
