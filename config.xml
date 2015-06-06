@@ -11,6 +11,7 @@
   <preference name="StatusBarOverlaysWebView" value="false" />
   <preference name="BackupWebStorage" value="none"/>
   <preference name="AllowInlineMediaPlayback" value="true"/>
+  <preference name="MediaPlaybackRequiresUserAction" value="false"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>

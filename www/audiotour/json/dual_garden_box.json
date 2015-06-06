@@ -12,11 +12,11 @@
           "videoData": [
           {
             "title":"About the Exhibition",
-            "videoFile":"audiotour/videos/dual/about.mp4"
+            "videoFile":"audiotour/videos/dual/LAbout.mp4"
           },
           {
             "title":"About John Bartram",
-            "videoFile":"audiotour/videos/dual/aboutjb.mp4"
+            "videoFile":"audiotour/videos/dual/LAboutJB.mp4"
           }
         ]
       },
@@ -29,7 +29,7 @@
         "videoData": [
           {
             "title":"Listen",
-            "videoFile":"audiotour/videos/dual/0r.mp4"
+            "videoFile":""
           }
         ]
       },
@@ -42,7 +42,7 @@
         "videoData": [
           {
             "title":"Listen",
-            "videoFile":"audiotour/videos/dual/rj.mp4"
+            "videoFile":"audiotour/videos/dual/LRayJones.mp4"
           }
         ]
       },
@@ -55,7 +55,7 @@
         "videoData": [
           {
             "title":"Listen",
-            "videoFile":"audiotour/videos/dual/7r.mp4"
+            "videoFile":""
           }
         ]
       },
@@ -68,7 +68,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/gord.mp4"
+          "videoFile":"audiotour/videos/dual/LGord.mp4"
         }
       ]
     },
@@ -81,7 +81,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/aloe.mp4"
+          "videoFile":""
         }
       ]
     },
@@ -94,7 +94,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/tr.mp4"
+          "videoFile":"audiotour/videos/dual/LTom.mp4"
         }
       ]
     },
@@ -107,7 +107,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/5r.mp4"
+          "videoFile":""
         }
       ]
     },
@@ -120,20 +120,20 @@
     "videoData": [
       {
         "title":"Listen",
-        "videoFile":"audiotour/videos/dual/4l.mp4"
+        "videoFile":"audiotour/videos/dual/LAF.mp4"
       }
     ]
   },
   {
     "tableTitle": "Linda Rutenberg",
     "tableThumb": "",
-    "largeImage": "audiotour/images/dual/1r.jpeg",
+    "largeImage": "audiotour/images/dual/pitcher.png",
     "imgCaption": "Linda Rutenberg, <i>Pitcher Plant</i>, 2006, Atlanta Botanical Garden, Atlanta, Georgia",
     "hidden":"visible",
     "videoData": [
       {
         "title":"Listen",
-        "videoFile":"audiotour/videos/dual/1r.mp4"
+        "videoFile":""
       }
     ]
   },
@@ -146,7 +146,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/12l.mp4"
+          "videoFile":"audiotour/videos/dual/LRoss.mp4"
         }
       ]
     },
@@ -159,7 +159,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/2r.mp4"
+          "videoFile":""
         }
       ]
     },
@@ -172,7 +172,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/bencolker.mp4"
+          "videoFile":"audiotour/videos/dual/LBC.mp4"
         }
       ]
     },
@@ -185,7 +185,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/8r.mp4"
+          "videoFile":""
         }
       ]
     },
@@ -198,28 +198,28 @@
       "videoData": [
         {
           "title":"About the Artwork",
-          "videoFile":"audiotour/videos/dual/7l.mp4"
+          "videoFile":"audiotour/videos/dual/LBFB.mp4"
         },
         {
           "title":"&quot;Caretaking&quot; Poem",
-          "videoFile":""
+          "videoFile":"audiotour/videos/dual/LBFB_Caretaking.mp4"
         },
         {
           "title":"&quot;Bartram's Boxes&quot; Poem",
-          "videoFile":""
+          "videoFile":"audiotour/videos/dual/LBFB_Boxes.mp4"
         }
       ]
     },
     {
       "tableTitle": "Linda Rutenberg",
       "tableThumb": "",
-      "largeImage": "audiotour/images/dual/6r.jpg",
+      "largeImage": "audiotour/images/dual/orchid.png",
       "imgCaption": "Linda Rutenberg, <i>China Dragon Orchid</i>, 2006, Longwood Gardens, Kennett Square, Pennsylvania",
       "hidden":"visible",
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/6r.mp4"
+          "videoFile":""
         }
       ]
     },
@@ -232,7 +232,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/leahw.mp4"
+          "videoFile":"audiotour/videos/dual/LLeah.mp4"
         }
       ]
     },
@@ -245,7 +245,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/4r.mp4"
+          "videoFile":""
         }
       ]
     },
@@ -258,7 +258,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/13l.mp4"
+          "videoFile":"audiotour/videos/dual/LNeil.mp4"
         }
       ]
     },
@@ -271,7 +271,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/3r.mp4"
+          "videoFile":""
         }
       ]
     },
@@ -284,7 +284,7 @@
       "videoData": [
         {
           "title":"Listen",
-          "videoFile":"audiotour/videos/dual/6l.mp4"
+          "videoFile":"audiotour/videos/dual/LJudith.mp4"
         }
       ]
     },
