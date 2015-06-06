@@ -41,24 +41,24 @@
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
         </ion-nav-buttons>
         <ion-pane style="background-color:black;">
-          <div style="position:absolute;top:44;left:0;width:100vw;height:100vh;" class="pane-information"></div>
-          <div style="position:absolute;top:0;left:0;width:100vw;height:calc(100vh - 44px);opacity:1;margin-top:44px;padding:20px;">
+          <div style="position:absolute;top:44;left:0;width:100%;height:100%;" class="pane-information"></div>
+          <div style="position:absolute;top:0;left:0;width:100%;height:-webkit-calc(100% - 44px);opacity:1;margin-top:44px;padding:20px;">
             <section ng-click="goVisit();" class="card" style="width:100%;border-radius:4px;height:30%;margin:0;margin-bottom:20px;">
-              <div ng-style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_visit.jpg');background-size:cover;background-position:center center;"></div>
+              <div style="width:100%;height:-webkit-calc(100% - 25px);background-image:url('assets/info_visit.jpg');background-size:cover;background-position:center center;"></div>
               <div class="boxText"><h3>Visit</h3></div>
             </section>
-            <div ng-style="width:100%;height:40%;margin-bottom:20px;">
-              <section ng-click="goLocation();" class="card" ng-style="vertical-align:top;float:left;width:calc(50% - 20px);height:100%;border-radius:4px;margin:0;">
-                <div style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_location.jpg');background-size:cover;background-position:center center;"></div>
+            <div style="width:100%;height:40%;margin-bottom:20px;">
+              <section ng-click="goLocation();" class="card" style="vertical-align:top;float:left;width:-webkit-calc(50% - 20px);height:100%;border-radius:4px;margin:0;">
+                <div style="width:100%;height:-webkit-calc(100% - 25px);background-image:url('assets/info_location.jpg');background-size:cover;background-position:center center;"></div>
                 <div class="boxText"><h3>Location</h3></div>
               </section>
-              <section ng-click="goLearn();" class="card" ng-style="vertical-align:top;float:right;width:50%;height:60%;bottom:50%;border-radius:4px;margin:0;">
-                <div ng-style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_learn_alt.jpg');background-size:cover;background-position:center center;"></div>
+              <section ng-click="goLearn();" class="card" style="vertical-align:top;float:right;width:50%;height:60%;bottom:50%;border-radius:4px;margin:0;">
+                <div style="width:100%;height:-webkit-calc(100% - 25px);background-image:url('assets/info_learn_alt.jpg');background-size:cover;background-position:center center;"></div>
                 <div class="boxText"><h3>Learn More</h3></div>
               </section>
             </div>
-            <section ng-click="goHours();" class="card" ng-style="width:60%;height:calc(30% - 40px);bottom:50%;border-radius:4px;margin:0;">
-              <div ng-style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_hours_alt.jpg');background-size:cover;background-position:center center;"></div>
+            <section ng-click="goHours();" class="card" style="width:60%;height:-webkit-calc(30% - 40px);bottom:50%;border-radius:4px;margin:0;">
+              <div style="width:100%;height:-webkit-calc(100% - 25px);background-image:url('assets/info_hours_alt.jpg');background-size:cover;background-position:center center;"></div>
               <div class="boxText"><h3>Hours</h3></div>
             </section>
           </div>
@@ -71,8 +71,8 @@
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
       </ion-nav-buttons>
         <ion-pane style="background-color:black;">
-          <div style="position:absolute;top:44;left:0;width:100vw;height:100vh;" class="pane-information"></div>
-          <div style="position:absolute;top:0;left:0;width:100vw;height:calc(100vh - 44px);opacity:1;margin-top:44px;">
+          <div style="position:absolute;top:44;left:0;width:100%;height:100%;" class="pane-information"></div>
+          <div style="position:absolute;top:0;left:0;width:100%;height:-webkit-calc(100% - 44px);opacity:1;margin-top:44px;">
             <br />
             <center>
               <img style="width:128px;height:64px;" src="assets/res_logo.jpg"></img>
@@ -88,7 +88,7 @@
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
       </ion-nav-buttons>
-        <ion-pane><div id="map" style="margin-top:44px;width:100vw;height:100vh;"></div></ion-pane>
+        <ion-pane><div id="map" style="margin-top:44px;width:100%;height:100%;"></div></ion-pane>
       </ion-view>
     </script>
     <script id="information_learn.html" type="text/ng-template">
@@ -97,8 +97,8 @@
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
       </ion-nav-buttons>
         <ion-pane style="background-color:black;">
-          <div style="position:absolute;top:44;left:0;width:100vw;height:100vh;" class="pane-information"></div>
-          <div style="position:absolute;top:0;left:0;width:100vw;height:calc(100vh - 44px);opacity:1;margin-top:44px;">
+          <div style="position:absolute;top:44;left:0;width:100%;height:100%;" class="pane-information"></div>
+          <div style="position:absolute;top:0;left:0;width:100%;height:-webkit-calc(100% - 44px);opacity:1;margin-top:44px;">
             <br />
             <center>
               <img style="width:128px;height:64px;" src="assets/res_logo.jpg"></img>
@@ -118,8 +118,8 @@
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
       </ion-nav-buttons>
         <ion-pane style="background-color:black;">
-          <div style="position:absolute;top:44;left:0;width:100vw;height:100vh;" class="pane-information"></div>
-          <div style="position:absolute;top:0;left:0;width:100vw;height:calc(100vh - 44px);opacity:1;margin-top:24px;padding:20px;">
+          <div style="position:absolute;top:44;left:0;width:100%;height:100%;" class="pane-information"></div>
+          <div style="position:absolute;top:0;left:0;width:100%;height:-webkit-calc(100% - 44px);opacity:1;margin-top:24px;padding:20px;">
             <br />
             <center>
               <img style="width:128px;height:64px;" src="assets/res_logo.jpg"></img>
@@ -155,7 +155,7 @@
         <ion-pane>
           <ul class="selector-list">
               <li ng-repeat="item in objects" class="selector-item">
-                <div class="selector" style="background-image: url({{ item.image }});">
+                <div class="selector" style="background-image:url({{item.image}});">
                   <div class="tour-button" ng-click="select('{{ item.link }}');">{{item.button}}</div>
                 </div>
               </li>
@@ -195,7 +195,7 @@
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
         </ion-nav-buttons>
         <ion-pane style="overflow-y:auto;">
-          <div style="margin-top:50px;width:100%">
+          <div style="margin-top:44px;width:100%">
             <div class="row galleries-list">
               <div class="col" style="width:50%;">
                 <p style="text-align:center;font-size:18px;" ng-bind-html="smallTitle1"></p>
@@ -222,7 +222,7 @@
     </script>
     <script id="artwork.html" type="text/ng-template">
       <ion-view hide-nav-bar="false">
-        <ion-nav-title ng-bind-html="artworkTitle"></ion-nav-title>
+      <ion-nav-title>{{artworkTitle}}</ion-nav-title>
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
         </ion-nav-buttons>
