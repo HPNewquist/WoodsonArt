@@ -44,21 +44,21 @@
           <div style="position:absolute;top:44;left:0;width:100vw;height:100vh;" class="pane-information"></div>
           <div style="position:absolute;top:0;left:0;width:100vw;height:calc(100vh - 44px);opacity:1;margin-top:44px;padding:20px;">
             <section ng-click="goVisit();" class="card" style="width:100%;border-radius:4px;height:30%;margin:0;margin-bottom:20px;">
-              <div style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_visit.jpg');background-size:cover;background-position:center center;"></div>
+              <div ng-style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_visit.jpg');background-size:cover;background-position:center center;"></div>
               <div class="boxText"><h3>Visit</h3></div>
             </section>
-            <div style="width:100%;height:40%;margin-bottom:20px;">
-              <section ng-click="goLocation();" class="card" style="vertical-align:top;float:left;width:calc(50% - 20px);height:100%;border-radius:4px;margin:0;">
+            <div ng-style="width:100%;height:40%;margin-bottom:20px;">
+              <section ng-click="goLocation();" class="card" ng-style="vertical-align:top;float:left;width:calc(50% - 20px);height:100%;border-radius:4px;margin:0;">
                 <div style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_location.jpg');background-size:cover;background-position:center center;"></div>
                 <div class="boxText"><h3>Location</h3></div>
               </section>
-              <section ng-click="goLearn();" class="card" style="vertical-align:top;float:right;width:50%;height:60%;bottom:50%;border-radius:4px;margin:0;">
-                <div style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_learn_alt.jpg');background-size:cover;background-position:center center;"></div>
+              <section ng-click="goLearn();" class="card" ng-style="vertical-align:top;float:right;width:50%;height:60%;bottom:50%;border-radius:4px;margin:0;">
+                <div ng-style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_learn_alt.jpg');background-size:cover;background-position:center center;"></div>
                 <div class="boxText"><h3>Learn More</h3></div>
               </section>
             </div>
-            <section ng-click="goHours();" class="card" style="width:60%;height:calc(30% - 40px);bottom:50%;border-radius:4px;margin:0;">
-              <div style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_hours_alt.jpg');background-size:cover;background-position:center center;"></div>
+            <section ng-click="goHours();" class="card" ng-style="width:60%;height:calc(30% - 40px);bottom:50%;border-radius:4px;margin:0;">
+              <div ng-style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_hours_alt.jpg');background-size:cover;background-position:center center;"></div>
               <div class="boxText"><h3>Hours</h3></div>
             </section>
           </div>
