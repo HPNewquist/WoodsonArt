@@ -12,6 +12,10 @@ app.config(function($stateProvider, $urlRouterProvider)
 {
   $stateProvider.state('index', { url: '/home', templateUrl: 'home.html', controller: indexController });
   $stateProvider.state('information', { url: '/information', templateUrl: 'information.html', controller: informationController });
+  $stateProvider.state('information_visit', { url: '/information_visit', templateUrl: 'information_visit.html', controller: informationController });
+  $stateProvider.state('information_location', { url: '/information_location', templateUrl: 'information_location.html', controller: informationLocationController });
+  $stateProvider.state('information_learn', { url: '/information_learn', templateUrl: 'information_learn.html', controller: informationController });
+  $stateProvider.state('information_hours', { url: '/information_hours', templateUrl: 'information_hours.html', controller: informationController });
   $stateProvider.state('tourSelector', { url: '/tourSelector', templateUrl: 'tourSelector.html', controller: tourSelectorController, cache: true});
   $stateProvider.state('artworkSelectorTable', { url: '/artworkSelectorTable', templateUrl: 'artworkSelectorTable.html', controller: artworkSelectorTableController, cache: false});
   $stateProvider.state('artworkSelectorGrid', { url: '/artworkSelectorGrid', templateUrl: 'artworkSelectorGrid.html', controller: artworkSelectorGridController, cache: false});
@@ -113,12 +117,40 @@ function indexController($scope, $ionicHistory)
   };
 }
 
-function informationController($scope, $ionicHistory)
+function informationController($scope, $state, $ionicHistory)
 {
   $scope.goBack = function()
   {
     goBack($ionicHistory);
   };
+  $scope.goVisit = function()
+  {
+    $state.go("information_visit");
+  }
+  $scope.goHours = function()
+  {
+    $state.go("information_hours");
+  }
+  $scope.goLocation = function()
+  {
+    $state.go("information_location");
+  }
+  $scope.goLearn = function()
+  {
+    $state.go("information_learn");
+  }
+}
+
+function informationLocationController($scope, $state, $ionicHistory)
+{
+  $scope.goBack = function()
+  {
+    goBack($ionicHistory);
+  };
+  var myLatlng = new google.maps.LatLng(44.9620, -89.6130);
+  var mapOptions = { center: myLatlng, zoom: 16, mapTypeId: google.maps.MapTypeId.ROADMAP };
+  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  var marker = new google.maps.Marker({ position: myLatlng, map: map, title: 'Woodson Art Museum' });
 }
 
 function tourSelectorController($scope, $ionicHistory, $state)

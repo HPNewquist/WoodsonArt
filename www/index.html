@@ -14,6 +14,7 @@
     <script src="assets/lib/ng-cordova.min.js"></script>
     <script src="cordova.js"></script>
     <script src="assets/app.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&sensor=true"></script>
   </head>
   <body ng-app="WoodsonArt">
     <ion-nav-bar class="bar-positive"></ion-nav-bar>
@@ -38,8 +39,108 @@
       <ion-view class="page" hide-nav-bar="false" view-title="Information">
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
+        </ion-nav-buttons>
+        <ion-pane style="background-color:black;">
+          <div style="position:absolute;top:44;left:0;width:100vw;height:100vh;" class="pane-information"></div>
+          <div style="position:absolute;top:0;left:0;width:100vw;height:calc(100vh - 44px);opacity:1;margin-top:44px;padding:20px;">
+            <section ng-click="goVisit();" class="card" style="width:100%;border-radius:4px;height:30%;margin:0;margin-bottom:20px;">
+              <div style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_visit.jpg');background-size:cover;background-position:center center;"></div>
+              <div class="boxText"><h3>Visit</h3></div>
+            </section>
+            <div style="width:100%;height:40%;margin-bottom:20px;">
+              <section ng-click="goLocation();" class="card" style="vertical-align:top;float:left;width:calc(50% - 20px);height:100%;border-radius:4px;margin:0;">
+                <div style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_location.jpg');background-size:cover;background-position:center center;"></div>
+                <div class="boxText"><h3>Location</h3></div>
+              </section>
+              <section ng-click="goLearn();" class="card" style="vertical-align:top;float:right;width:50%;height:60%;bottom:50%;border-radius:4px;margin:0;">
+                <div style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_learn_alt.jpg');background-size:cover;background-position:center center;"></div>
+                <div class="boxText"><h3>Learn More</h3></div>
+              </section>
+            </div>
+            <section ng-click="goHours();" class="card" style="width:60%;height:calc(30% - 40px);bottom:50%;border-radius:4px;margin:0;">
+              <div style="width:100%;height:calc(100% - 25px);background-image:url('assets/info_hours_alt.jpg');background-size:cover;background-position:center center;"></div>
+              <div class="boxText"><h3>Hours</h3></div>
+            </section>
+          </div>
+        </ion-pane>
+      </ion-view>
+    </script>
+    <script id="information_visit.html" type="text/ng-template">
+      <ion-view class="page" hide-nav-bar="false" view-title="Visit">
+        <ion-nav-buttons side="left" ng-show="false">
+          <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
       </ion-nav-buttons>
-        <ion-pane class="pane-information">
+        <ion-pane style="background-color:black;">
+          <div style="position:absolute;top:44;left:0;width:100vw;height:100vh;" class="pane-information"></div>
+          <div style="position:absolute;top:0;left:0;width:100vw;height:calc(100vh - 44px);opacity:1;margin-top:44px;">
+            <br />
+            <center>
+              <img style="width:128px;height:64px;" src="assets/res_logo.jpg"></img>
+              <p style="color:white;font-size:18px;margin-top:20px;">Always Free Admission<br />Phone: 715.845.7010</p>
+              <p style="color:white;font-size:18px;margin-top:20px;">700 North Twelfth Street<br />Wausau, WI 54403</p>
+            </center>
+          </div>
+        </ion-pane>
+      </ion-view>
+    </script>
+    <script id="information_location.html" type="text/ng-template">
+      <ion-view class="page" hide-nav-bar="false" view-title="Location">
+        <ion-nav-buttons side="left" ng-show="false">
+          <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
+      </ion-nav-buttons>
+        <ion-pane><div id="map" style="margin-top:44px;width:100vw;height:100vh;"></div></ion-pane>
+      </ion-view>
+    </script>
+    <script id="information_learn.html" type="text/ng-template">
+      <ion-view class="page" hide-nav-bar="false" view-title="Learn More">
+        <ion-nav-buttons side="left" ng-show="false">
+          <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
+      </ion-nav-buttons>
+        <ion-pane style="background-color:black;">
+          <div style="position:absolute;top:44;left:0;width:100vw;height:100vh;" class="pane-information"></div>
+          <div style="position:absolute;top:0;left:0;width:100vw;height:calc(100vh - 44px);opacity:1;margin-top:44px;">
+            <br />
+            <center>
+              <img style="width:128px;height:64px;" src="assets/res_logo.jpg"></img>
+              <div style="margin-top:20px">
+                <a class="info-button" style="display:block;" onClick="">Director&#39;s Welcome</a>
+                <a class="info-button" style="display:block;" onClick="">Our Story</a>
+              </div>
+              <p style="position:absolute; bottom:0;color:white;font-size:14px;margin-top:20px;padding:10px;">The Woodson’s audio tour app is made possible through the generous support of the Dudley Foundation, Wausau, and a partnership with the Wausau School District’s Engineering Global Leadership Academy.</p>
+            </center>
+          </div>
+        </ion-pane>
+      </ion-view>
+    </script>
+    <script id="information_hours.html" type="text/ng-template">
+      <ion-view class="page" hide-nav-bar="false" view-title="Hours">
+        <ion-nav-buttons side="left" ng-show="false">
+          <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
+      </ion-nav-buttons>
+        <ion-pane style="background-color:black;">
+          <div style="position:absolute;top:44;left:0;width:100vw;height:100vh;" class="pane-information"></div>
+          <div style="position:absolute;top:0;left:0;width:100vw;height:calc(100vh - 44px);opacity:1;margin-top:24px;padding:20px;">
+            <br />
+            <center>
+              <img style="width:128px;height:64px;" src="assets/res_logo.jpg"></img>
+            </center>
+            <div id="textbox" style="margin-top:20px;">
+              <p class="alignleft">Tuesday - Friday</p>
+              <p class="alignright">9am - 4pm</p>
+              <p class="alignleft">Saturday - Sunday</p>
+              <p class="alignright">Noon - 5pm</p>
+              <p class="alignleft">Closed Monday and Holidays</p>
+            </div>
+            <div style="clear: both;"></div>
+            <div id="textbox" style="margin-top:20px;">
+              <p class="alignleft">First Tuesday each month & every Birds in Art Thursday</p>
+              <p class="alignright">9am - 7:30pm</p>
+            </div>
+            <div style="clear: both;"></div>
+            <center>
+              <p style="color:white;font-size:18px;margin-top:20px;">Birds in Art, the Museum&#39;s flagship exhibition, opens each fall the weekend after Labor Day.</p>
+            </center>
+          </div>
         </ion-pane>
       </ion-view>
     </script>
