@@ -157,6 +157,26 @@ function informationLocationController($scope, $state, $ionicHistory)
   }
 }
 
+function informationLearnController($scope, $state, $ionicHistory)
+{
+  $scope.goBack = function()
+  {
+    goBack($ionicHistory);
+  };
+  $scope.dirWelcome = function()
+  {
+    storedVideoLink = "audiotour/videos/ui/DirectorsWelcome.mp4";
+    storedArtworkTitle = "Director's Welcome";
+    $state.go("video");
+  }
+  $scope.story = function()
+  {
+    storedVideoLink = "audiotour/videos/ui/OurStory.mp4";
+    storedArtworkTitle = "Our Story";
+    $state.go("video");
+  }
+}
+
 function tourSelectorController($scope, $ionicHistory, $state)
 {
   /* Reload - $state.transitionTo($state.current, $state.$current.params, { reload: true, inherit: true, notify: true }); */
