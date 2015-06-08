@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="format-detection" content="telephone=no">
     <title>Woodson Art</title>
     <link href="assets/lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="assets/style.css" rel="stylesheet">
@@ -13,15 +14,15 @@
     <script src="assets/lib/ionic/js/angular-ui/angular-ui-router.min.js"></script>
     <script src="assets/lib/ng-cordova.min.js"></script>
     <script src="cordova.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&amp;sensor=true"></script>
     <script src="assets/app.js"></script>
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&amp;sensor=true"></script>
   </head>
-  <body ng-app="WoodsonArt">
+  <body ng-app="WoodsonArt" style="">
     <ion-nav-bar class="bar-positive"></ion-nav-bar>
     <ion-nav-view animation="fade-in"></ion-nav-view>
     <script id="home.html" type="text/ng-template">
       <ion-view hide-nav-bar="true" view-title="">
-        <ion-pane class="pane-home">
+        <ion-pane class="pane-home" style="-webkit-transform: translate3d(0,0,0);">
           <div class="home-header">
             <h4>Leigh Yawkey</h4>
             <h3>Woodson Art Museum</h3>
@@ -40,7 +41,7 @@
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
         </ion-nav-buttons>
-        <ion-pane style="background-color:black;">
+        <ion-pane style="background-color:black;-webkit-transform: translate3d(0,0,0);">
           <div style="position:absolute;top:44;left:0;width:100%;height:100%;" class="pane-information"></div>
           <div style="position:absolute;top:0;left:0;width:100%;height:-webkit-calc(100% - 44px);opacity:1;margin-top:44px;padding:20px;">
             <section ng-click="goVisit();" class="card" style="width:100%;border-radius:4px;height:30%;margin:0;margin-bottom:20px;">
@@ -69,8 +70,8 @@
       <ion-view class="page" hide-nav-bar="false" view-title="Visit">
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
-      </ion-nav-buttons>
-        <ion-pane style="background-color:black;">
+      </ion-nav-buttons>0
+        <ion-pane style="background-color:black;-webkit-transform: translate3d(0,0,0);">
           <div style="position:absolute;top:44;left:0;width:100%;height:100%;" class="pane-information"></div>
           <div style="position:absolute;top:0;left:0;width:100%;height:-webkit-calc(100% - 44px);opacity:1;margin-top:44px;">
             <br />
@@ -88,7 +89,7 @@
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
       </ion-nav-buttons>
-        <ion-pane><div id="map" style="margin-top:44px;width:100%;height:100%;"></div></ion-pane>
+        <ion-pane style="background-color:black;-webkit-transform: translate3d(0,0,0);"><div id="map" class="underNavBar" style="width:100%;height:100%;"></div></ion-pane>
       </ion-view>
     </script>
     <script id="information_learn.html" type="text/ng-template">
@@ -96,7 +97,7 @@
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
       </ion-nav-buttons>
-        <ion-pane style="background-color:black;">
+        <ion-pane style="background-color:black;-webkit-transform: translate3d(0,0,0);">
           <div style="position:absolute;top:44;left:0;width:100%;height:100%;" class="pane-information"></div>
           <div style="position:absolute;top:0;left:0;width:100%;height:-webkit-calc(100% - 44px);opacity:1;margin-top:44px;">
             <br />
@@ -117,7 +118,7 @@
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
       </ion-nav-buttons>
-        <ion-pane style="background-color:black;">
+        <ion-pane style="background-color:black;-webkit-transform: translate3d(0,0,0);">
           <div style="position:absolute;top:44;left:0;width:100%;height:100%;" class="pane-information"></div>
           <div style="position:absolute;top:0;left:0;width:100%;height:-webkit-calc(100% - 44px);opacity:1;margin-top:24px;padding:20px;">
             <br />
@@ -152,7 +153,7 @@
     </script>
     <script id="tourSelector.html" type="text/ng-template">
       <ion-view hide-nav-bar="true" view-title="">
-        <ion-pane>
+        <ion-pane style="-webkit-transform: translate3d(0,0,0);">
           <ul class="selector-list">
               <li ng-repeat="item in objects" class="selector-item">
                 <div class="selector" style="background-image:url({{item.image}});">
@@ -170,7 +171,7 @@
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
         </ion-nav-buttons>
-        <ion-pane>
+        <ion-pane style="-webkit-transform: translate3d(0,0,0);">
           <ul class="tour-list">
             <li ng-repeat="item in objects" class="tour-list-item" ng-click="select('{{item.tableTitle}}', '{{item.largeImage}}', '{{item.imgCaption}}', {{item.videoData}})">
               <table class="tableview">
@@ -194,29 +195,34 @@
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
         </ion-nav-buttons>
-        <ion-pane style="overflow-y:auto;">
-          <div style="margin-top:44px;width:100%">
-            <div class="row galleries-list">
-              <div class="col" style="width:50%;">
-                <p style="text-align:center;font-size:18px;" ng-bind-html="smallTitle1"></p>
+        <ion-pane style="overflow-y:auto;-webkit-transform: translate3d(0,0,0);">
+          <div class="underNavBar">
+            <div class="galleries-list">
+              <div class="gallery-title-holder">
+                <p class="gallery-title" ng-bind-html="smallTitle1"></p>
               </div>
-              <div class="col" style="width:50%;">
-                <p style="text-align:center;font-size:18px;" ng-bind-html="smallTitle2"></p>
+              <div class="gallery-title-holder">
+                <p class="gallery-title" ng-bind-html="smallTitle2"></p>
               </div>
+              <div class="clearfix"></div>
             </div>
-            <div style="visibility:{{objects[$index].hidden}}" ng-repeat="item in objects" class="row galleries-list" ng-if="$even">
-              <div ng-click="select('{{objects[$index].tableTitle}}', '{{objects[$index].largeImage}}', '{{objects[$index].imgCaption}}', {{objects[$index].videoData}})" class="col" style="width:50%">
-                <span class="gallery">
-                  <div class="gallery-bg" style="background-size:cover;background-position:center center;background-image: url({{objects[$index].largeImage}})" ></div>
-                </span>
+            <div ng-repeat="item in objects" ng-if="$even">
+              <div class="square bg" ng-style="{ 'background-image': 'url(' + objects[$index].largeImage + ')' }" ng-click="select('{{objects[$index].tableTitle}}', '{{objects[$index].largeImage}}', '{{objects[$index].imgCaption}}', {{objects[$index].videoData}})">
+                <div class="content">
+                <div class="table">
+                    <div class="table-cell"></div>
+                  </div>
+                </div>
               </div>
-              <div style="visibility:{{objects[$index + 1].hidden}}" ng-click="select('{{objects[$index + 1].tableTitle}}', '{{objects[$index + 1].largeImage}}', '{{objects[$index + 1].imgCaption}}', {{objects[$index + 1].videoData}})" class="col" style="width:50%">
-                <span class="gallery">
-                    <div class="gallery-bg" style="background-size:cover;background-position:center center;background-image: url({{objects[$index + 1].largeImage}})"></div>
-                </span>
+              <div class="square bg" ng-style="{ 'background-image': 'url(' + objects[$index + 1].largeImage + ')' }" ng-click="select('{{objects[$index + 1].tableTitle}}', '{{objects[$index + 1].largeImage}}', '{{objects[$index + 1].imgCaption}}', {{objects[$index + 1].videoData}})">
+                <div class="content">
+                  <div class="table">
+                    <div class="table-cell"></div>
+                  </div>
+                </div>
               </div>
+              <div class="clearfix"></div>
             </div>
-          </div>
         </ion-pane>
       </ion-view>
     </script>
@@ -226,12 +232,8 @@
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
         </ion-nav-buttons>
-        <ion-pane style="overflow-y:auto;">
-          <ul class="h">
-            <li>
-              <img class="no-border" src="{{artworkImage}}"/>
-            </li>
-          </ul>
+        <ion-pane style="overflow-y:auto;-webkit-transform: translate3d(0,0,0);">
+          <center><div class="h" style="background-image: url({{artworkImage}});"></div></center>
           <p class="artwork-caption" ng-bind-html="artworkCaption"></p>
           <ul class="videoList">
             <li ng-repeat="item in videoData" ng-click="playVideo('{{item.videoFile}}')"><p ng-bind-html="item.title"></p></li>
@@ -245,8 +247,8 @@
         <ion-nav-buttons side="left" ng-show="false">
           <button ng-click="goBack();" class="button button-icon button-clear ion-chevron-left">&nbsp;Back</button>
         </ion-nav-buttons>
-        <ion-pane style="background-color:black;">
-          <video ng-src="{{link}}" class="centerme" controls="controls" autoplay></video>
+        <ion-pane style="background-color:black;-webkit-transform: translate3d(0,0,0);">
+          <video ng-src="{{link}}" class="centerme" controls="controls" autoplay webkit-playsinline></video>
         </ion-pane>
       </ion-view>
     </script>

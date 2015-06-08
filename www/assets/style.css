@@ -19,6 +19,14 @@ i {
 
 
 
+
+
+
+
+
+
+
+
 .boxText {
   height:25px;
   margin-left:2px;
@@ -37,7 +45,7 @@ ion-nav-view {
 }
 
 .bar-positive {
-	border-color: rgb(147,140,126) !important;
+border-color: rgb(147,140,126) !important;
   background-color: rgb(147,140,126) !important;
 }
 
@@ -196,8 +204,11 @@ ion-nav-view {
 
 
 .centerme {
-  width:100%;
-  height:100%;
+    position:absolute;
+    top:44px;
+    left:0;
+    width:100%;
+    height:-webkit-calc(100% - 44px);
 }
 
 .fullscreen-player {
@@ -212,61 +223,97 @@ ion-nav-view {
 
 
 
-/* Galleries view */
+
+
+
+
+
+.underNavBar {
+  margin-top:44px;
+}
+
 .galleries-list {
-    flex-wrap: wrap;
-    -webkit-flex-flow: row wrap;
     margin-left:0px;
     width:100%;
 }
-.gallery {
-    height: -webkit-calc(50% - 15px);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    border-radius: 2px;
-    background-color: #FFF;
+
+.gallery-title-holder {
+  width:50%;
+  float: left;
+  margin-top:10px;
+}
+
+.gallery-title {
+  text-align:center;
+  font-size:18px;
+}
+
+
+.square {
+    float:left;
     position: relative;
-    display: block;
+    width: 45%;
+    padding-bottom : 45%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    margin-left:3%;
+    background-color: transparent;
+    overflow:hidden;
 }
-.gallery .gallery-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 2px;
+
+.content {
+    position:absolute;
+    height:90%; /* = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+
 }
-.gallery .gallery-bg {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: rgba(42, 42, 42, 0.3);
+.table{
+    display:table;
+    width:100%;
+    height:100%;
 }
-.gallery .gallery-title, .galleries-view .gallery .gallery-title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    background: rgba(0,0,0,0.5);
-    color: #fff;
+.table-cell{
+    display:table-cell;
+    vertical-align:middle;
 }
-.galleries-view .gallery .gallery-title {
-    padding: 3px 5px;
+.content .rs{
+    width:auto;
+    height:auto;
+    max-height:90%;
+    max-width:100%;
 }
-.gallery-view .gallery .gallery-title {
-    text-align: center;
+.bg{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:#fff;
 }
-.gallery .gallery-title i {
-    font-size: 2em;
-}
-.gallery .gallery-title h5, .gallery .gallery-title h6 {
-    color: #fff;
-    margin: 0;
+
+.clearfix {
+  clear:both;
 }
 
 
-.row {
-  width:100%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -364,23 +411,15 @@ ion-nav-view {
 
 
 
-.h
-{
-  margin-top:60px;
-  width:100%;
-}
 
-.h li
-{
-  width:100%;
-  text-align:center;
-}
-
-.h img
-{
+.h {
   width:90%;
   max-height:230px;
-  object-fit:contain;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height:230px;
+  margin-top: 54px;
 }
 
 

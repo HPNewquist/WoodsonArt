@@ -8,7 +8,7 @@ var storedArtworkCaption;
 var storedVideoData;
 var storedVideoLink;
 
-app.config(function($stateProvider, $urlRouterProvider)
+app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider)
 {
   $stateProvider.state('index', { url: '/home', templateUrl: 'home.html', controller: indexController });
   $stateProvider.state('information', { url: '/information', templateUrl: 'information.html', controller: informationController });
@@ -22,6 +22,7 @@ app.config(function($stateProvider, $urlRouterProvider)
   $stateProvider.state('artwork', { url: '/artwork', templateUrl: 'artwork.html', controller: artworkController, cache: false});
   $stateProvider.state('video', { url: '/video', templateUrl: 'video.html', controller: videoController, cache: false});
   $urlRouterProvider.otherwise('/home'); /* Redirect the app to the home page on launch. */
+  $ionicConfigProvider.views.swipeBackEnabled(false);
 });
 
 app.run(function($ionicPlatform)
@@ -147,10 +148,13 @@ function informationLocationController($scope, $state, $ionicHistory)
   {
     goBack($ionicHistory);
   };
-  var myLatlng = new google.maps.LatLng(44.9620, -89.6130);
-  var mapOptions = { center: myLatlng, zoom: 16, mapTypeId: google.maps.MapTypeId.ROADMAP };
-  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-  var marker = new google.maps.Marker({ position: myLatlng, map: map, title: 'Woodson Art Museum' });
+  if(google && google.maps)
+  {
+    var myLatlng = new google.maps.LatLng(44.9620, -89.6130);
+    var mapOptions = { center: myLatlng, zoom: 16, mapTypeId: google.maps.MapTypeId.ROADMAP };
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    var marker = new google.maps.Marker({ position: myLatlng, map: map, title: 'Woodson Art Museum' });
+  }
 }
 
 function tourSelectorController($scope, $ionicHistory, $state)
