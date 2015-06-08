@@ -14,7 +14,7 @@ app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider)
   $stateProvider.state('information', { url: '/information', templateUrl: 'information.html', controller: informationController });
   $stateProvider.state('information_visit', { url: '/information_visit', templateUrl: 'information_visit.html', controller: informationController });
   $stateProvider.state('information_location', { url: '/information_location', templateUrl: 'information_location.html', controller: informationLocationController });
-  $stateProvider.state('information_learn', { url: '/information_learn', templateUrl: 'information_learn.html', controller: informationController });
+  $stateProvider.state('information_learn', { url: '/information_learn', templateUrl: 'information_learn.html', controller: informationLearnController });
   $stateProvider.state('information_hours', { url: '/information_hours', templateUrl: 'information_hours.html', controller: informationController });
   $stateProvider.state('tourSelector', { url: '/tourSelector', templateUrl: 'tourSelector.html', controller: tourSelectorController, cache: true});
   $stateProvider.state('artworkSelectorTable', { url: '/artworkSelectorTable', templateUrl: 'artworkSelectorTable.html', controller: artworkSelectorTableController, cache: false});
